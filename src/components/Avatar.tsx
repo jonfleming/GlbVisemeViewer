@@ -12,7 +12,7 @@ interface AvatarProps {
 
 export function Avatar({ morphTargets }: AvatarProps) {
   const group = useRef<Group>(null);
-  const { nodes, materials } = useGLTF('`https://models.readyplayer.me/669bfa4c553871e7ca76cfca.glb?morphTargets=Oculus+Visemes`');
+  const { nodes, materials } = useGLTF('https://models.readyplayer.me/669bfa4c553871e7ca76cfca.glb?morphTargets=Oculus+Visemes');
 
   // Update morph target influences when they change
   useEffect(() => {
